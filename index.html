@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>保研政策名词全解</title>
+<style>
+:root{
+  --bg:#f7f6f3; --card:#ffffff; --line:#e3e0d8; --line2:#d0ccc0;
+  --tx:#1f1e1c; --tx2:#5c5a54; --tx3:#8a877e;
+  --accent:#185FA5; --accent-bg:#E6F1FB;
+  --warn-bg:#FCEBEB; --warn-line:#F09595; --warn-tx:#791F1F;
+  --ok-bg:#EAF3DE; --ok-line:#97C459; --ok-tx:#27500A;
+  --tip-bg:#FAEEDA; --tip-line:#EF9F27; --tip-tx:#633806;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#16181d; --card:#1e2026; --line:#2e3138; --line2:#3d4149;
+    --tx:#e8e6e1; --tx2:#a8a49c; --tx3:#7a776f;
+    --accent:#85B7EB; --accent-bg:#12283f;
+    --warn-bg:#2e1618; --warn-line:#8c4a4a; --warn-tx:#f0b8b8;
+    --ok-bg:#1c2a12; --ok-line:#5c8a33; --ok-tx:#c3dd97;
+    --tip-bg:#2c2110; --tip-line:#8a6520; --tip-tx:#efc88a;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  font-size:15px;line-height:1.7;padding:32px 20px 80px}
+.wrap{max-width:940px;margin:0 auto}
+h1{font-size:26px;font-weight:600;letter-spacing:-.3px}
+.sub{color:var(--tx2);font-size:14px;margin-top:8px}
+.meta{color:var(--tx3);font-size:13px;margin-top:4px}
+.bar{display:flex;gap:10px;margin:24px 0 8px;flex-wrap:wrap}
+#q{flex:1;min-width:220px;padding:10px 14px;font-size:14px;border:1px solid var(--line2);
+  border-radius:8px;background:var(--card);color:var(--tx);font-family:inherit}
+#q:focus{outline:none;border-color:var(--accent)}
+button{padding:10px 16px;font-size:14px;border:1px solid var(--line2);border-radius:8px;
+  background:var(--card);color:var(--tx);cursor:pointer;font-family:inherit}
+button:hover{border-color:var(--accent);color:var(--accent)}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0 28px}
+nav a{font-size:13px;color:var(--tx2);text-decoration:none;padding:5px 11px;
+  border:1px solid var(--line);border-radius:20px;background:var(--card)}
+nav a:hover{color:var(--accent);border-color:var(--accent)}
+section{margin-bottom:40px}
+h2{font-size:19px;font-weight:600;padding-bottom:9px;border-bottom:2px solid var(--accent);
+  margin-bottom:6px;display:inline-block}
+.note{color:var(--tx2);font-size:13.5px;margin-bottom:16px}
+.term{border:1px solid var(--line);border-radius:10px;background:var(--card);
+  padding:14px 18px;margin-bottom:10px}
+.term h3{font-size:15.5px;font-weight:600;margin-bottom:5px}
+.term h3 .en{font-weight:400;font-size:13px;color:var(--tx3);margin-left:8px}
+.term p{font-size:14px;color:var(--tx2)}
+.term p.key{color:var(--tx);margin-top:5px}
+.term p.key b{color:var(--accent);font-weight:600}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:5px;
+  margin-left:8px;vertical-align:middle;font-weight:500}
+.t-warn{background:var(--warn-bg);color:var(--warn-tx);border:1px solid var(--warn-line)}
+.t-ok{background:var(--ok-bg);color:var(--ok-tx);border:1px solid var(--ok-line)}
+.t-tip{background:var(--tip-bg);color:var(--tip-tx);border:1px solid var(--tip-line)}
+.box{border-radius:10px;padding:16px 20px;margin-bottom:12px;font-size:14px}
+.box h3{font-size:15.5px;font-weight:600;margin-bottom:6px}
+.b-warn{background:var(--warn-bg);border:1px solid var(--warn-line)}
+.b-warn h3{color:var(--warn-tx)} .b-warn p{color:var(--tx2)} .b-warn b{color:var(--warn-tx)}
+.b-tip{background:var(--tip-bg);border:1px solid var(--tip-line)}
+.b-tip h3{color:var(--tip-tx)} .b-tip p{color:var(--tx2)}
+table{width:100%;border-collapse:collapse;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:14px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--accent-bg);color:var(--accent);font-weight:600;font-size:13.5px}
+tr:last-child td{border-bottom:none}
+td:first-child{white-space:nowrap;font-weight:500}
+footer{color:var(--tx3);font-size:12.5px;margin-top:40px;
+  border-top:1px solid var(--line);padding-top:16px}
+@media print{
+  body{background:#fff;color:#000;padding:0;font-size:11pt}
+  .bar,nav,button{display:none}
+  .term,.box,table{border-color:#bbb;background:#fff;break-inside:avoid}
+  section{break-inside:auto}
+  h2{break-after:avoid}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>保研政策名词全解</h1>
+<div class="sub">按"资格 → 接收 → 系统 → 加分 → 博弈"五个环节分类，附易混淆辨析与时间线</div>
+<div class="meta">整理于 2026 年 9 月 · 政策口径以 2026 届（现行）为准，具体数字逐年微调，术语与机制稳定</div>
+
+<div class="bar">
+  <input id="q" type="text" placeholder="输入关键词过滤，如：优营 / 重修 / 待录取 / 跨保">
+  <button onclick="window.print()">打印 / 存 PDF</button>
+</div>
+
+<nav>
+  <a href="#a">一、资格类</a>
+  <a href="#b">二、接收类</a>
+  <a href="#c">三、系统操作类</a>
+  <a href="#d">四、评价加分类</a>
+  <a href="#e">五、出身与博弈</a>
+  <a href="#f">六、专业与学科</a>
+  <a href="#g">七、易混淆辨析</a>
+  <a href="#h">八、时间线</a>
+</nav>
+
+<section id="a">
+<h2>一、资格类 —— 你有没有资格被"推荐"</h2>
+<div class="note">这一环由<b>你的本科学校</b>决定，核心是"排第几"。教育部下名额给学校，学校分到专业，专业按排名发。</div>
+
+<div class="term"><h3>推免 / 推免生<span class="en">推荐优秀应届本科毕业生免试攻读研究生</span></h3>
+<p>不参加全国统考初试，直接进入研究生招生单位的复试考核。</p>
+<p class="key"><b>关键：</b>"免试"免的是<b>统考初试</b>，不是免复试、免面试。很多人以为保研=不用考，其实只是换了一套考核方式。</p></div>
+
+<div class="term"><h3>推免资格</h3>
+<p>本校认定你可以被推荐，赋予你登录国家推免系统的权限。</p>
+<p class="key"><b>关键：</b>资格<b>只是入场券</b>，不等于被任何学校录取。每年都有人拿了资格，9 月却没学上。</p></div>
+
+<div class="term"><h3>推免名额 / 推免指标</h3>
+<p>教育部下达到各校的推荐名额总数，再由学校分配到各学院、各专业。</p>
+<p class="key"><b>关键：</b>这是<b>零和竞争</b>——你多一个别人就少一个。名额数是全专业最该先查清楚的数字。</p></div>
+
+<div class="term"><h3>保研率<span class="tag t-tip">最该先查的数字</span></h3>
+<p>推免名额 ÷ 本专业同届人数。</p>
+<p class="key"><b>量级：</b>顶尖 985 热门专业可达 30%–50%+；普通 211 约 8%–15%；双非院校可能只有 <b>2%–5%</b>。这个数字直接决定你该按"冲刺"还是"保底"规划。</p></div>
+
+<div class="term"><h3>加权平均分</h3>
+<p>Σ(课程成绩 × 该课学分) ÷ Σ学分。</p>
+<p class="key"><b>关键：</b>是"按学分加权"，不是算术平均。<b>5 学分的高数考 80，比 2 学分的选修考 95 影响大得多</b>——这是选课策略的数学基础。</p></div>
+
+<div class="term"><h3>平均学分绩点（GPA）</h3>
+<p>把百分制成绩换成绩点（如 90 分=4.0）后按学分加权。</p>
+<p class="key"><b>关键：</b>换算表各校不同（4.0 制 / 5.0 制 / 北大 4.0 算法）。<b>同一个人在不同算法下 GPA 能差 0.2 以上</b>，看往届数据时务必确认口径。</p></div>
+
+<div class="term"><h3>学业排名 vs 综合排名</h3>
+<p>学业排名只看课程成绩；综合排名把竞赛、论文、荣誉等加分项算进去。</p>
+<p class="key"><b>关键：</b>有的学校推免只用学业排名，有的用综合排名，有的两者都要达标。<b>这决定了你该不该花时间搞竞赛</b>。</p></div>
+
+<div class="term"><h3>前六学期成绩<span class="tag t-warn">时间红线</span></h3>
+<p>推免计算的是大一到大三共 6 个学期的成绩。</p>
+<p class="key"><b>关键：</b><b>大四（第 7、8 学期）成绩不计入推免</b>。所以大四多选课、刷分对保研完全无效。</p></div>
+
+<div class="term"><h3>必修 / 限选 / 任选 / 通识课</h3>
+<p>必修=必须修；限选=在指定范围内选（如"专业选修课 8 学分内选 4 门"）；任选=自由选；通识=跨专业公共素养课。</p>
+<p class="key"><b>关键：</b>推免成绩计算口径通常<b>只含"必修 + 限选"</b>，任选和通识课常常不计。<b>这一条直接决定多选课有没有用</b>——必须先查本校推免文件。</p></div>
+
+<div class="term"><h3>挂科 / 不及格 / 一票否决<span class="tag t-warn">最高危</span></h3>
+<p>多数学校的推免文件规定：在读期间有课程不及格记录，即取消推免资格。</p>
+<p class="key"><b>关键：</b>这是保研里<b>唯一一个不可挽回的风险</b>。GPA 低可以靠大二大三拉，挂科通常直接出局，且重修通过也可能留下记录。</p></div>
+
+<div class="term"><h3>重修 / 补考 / 刷分<span class="tag t-tip">规则差异极大</span></h3>
+<p>对已修课程再修一次，争取更高分。</p>
+<p class="key"><b>关键：</b>四种政策天差地别——①按<b>最高分</b>计；②按<b>首修</b>计（刷分无效）；③按<b>最后一次</b>计；④成绩单标注"重修"字样（外校看得到）。<b>这直接决定你该不该重修</b>，务必查清。</p></div>
+
+<div class="term"><h3>首修成绩</h3>
+<p>第一次修读某门课取得的成绩。</p>
+<p class="key"><b>关键：</b>部分学校无论重修多少次，推免都按首修成绩计。如果是这种政策，<b>刷分就是纯粹的浪费时间</b>。</p></div>
+
+<div class="term"><h3>递补 / 候补资格</h3>
+<p>排名在名额之外，但因前面有人放弃而顺位获得资格。</p>
+<p class="key"><b>关键：</b>边缘人的最后机会。<b>递补常在 9 月才确定</b>，所以边缘人必须一直准备到最后一刻，不能提前放弃。</p></div>
+
+<div class="term"><h3>破格 / 特殊学术专长推免</h3>
+<p>成绩排名不够，但有突出科研成果（顶会/顶刊/国家级大奖），可申请破格推荐。</p>
+<p class="key"><b>关键：</b>门槛极高，通常要求顶级成果，且各校名额极少。<b>不要把它当常规路径规划</b>，但当意外收获。</p></div>
+
+<div class="term"><h3>专项计划（支教团 / 辅导员 / 补偿名额）</h3>
+<p>研究生支教团、"1+3"辅导员专项（先工作 1 年再读研 3 年）、国防科工/师范类补偿名额等。</p>
+<p class="key"><b>关键：</b>占用<b>专项名额，不占普通名额</b>。对排名靠后但有学生工作、志愿经历的同学是一条真实通路。</p></div>
+</section>
+
+<section id="b">
+<h2>二、接收类 —— 对方学校要不要你</h2>
+<div class="note">这一环由<b>目标院校</b>决定。<b>2025 年起这一环发生了近十年最大的规则变化</b>，很多老经验已失效。</div>
+
+<div class="term"><h3>夏令营<span class="tag t-warn">2025 起大面积取消 / 改名</span></h3>
+<p>高校暑期举办的选拔活动，历史上是保研最主要的提前批通道。</p>
+<p class="key"><b>现状：</b>教育部明确<b>严禁夏令营与招生选拔挂钩</b>，清华率先全面取消，人大、中传、北航、中央民族等多校跟进。同济、浙大、上交等保留暑期活动但<b>剥离了考核环节，不发优营、不给任何优先录取权利</b>。</p></div>
+
+<div class="term"><h3>交流营 / 开放日 / 暑期学校 / 学术论坛<span class="tag t-tip">夏令营的"马甲"</span></h3>
+<p>夏令营取消后，各校改用这些名称举办暑期活动。</p>
+<p class="key"><b>关键：</b>多数<b>只做宣讲和学术交流，不发 offer</b>。但也有例外——部分学校把选拔挂在"预报名系统"里，名字改了实质仍是提前批。<b>判断方法：看报名入口是不是"推免生预报名系统"</b>。</p></div>
+
+<div class="term"><h3>预推免<span class="tag t-ok">现在的主战场</span></h3>
+<p>国家推免系统开放前，各校自行组织的提前批次考核。</p>
+<p class="key"><b>趋势：时间大幅前置。</b>清华 27 届推免系统 7 月 1 日开放、7 月 28 日关闭（往年 8 月，提前约两个月）；东南、同济等校 7 月底 8 月中就关闭系统。<b>留给准备材料的时间越来越少。</b></p></div>
+
+<div class="term"><h3>九推</h3>
+<p>"九月正式推免"的简称，指国家推免服务系统开放后的正式流程。</p>
+<p class="key"><b>关键：</b>过去是"夏令营为主、九推捡漏"。现在夏令营失效后，<b>重心已整体前移到预推免，九推更多是确认和补录</b>。</p></div>
+
+<div class="term"><h3>十推 / 补录</h3>
+<p>10 月对未招满专业开放的补录通道。</p>
+<p class="key"><b>关键：</b>真实的捡漏窗口，但<b>招满即止、转瞬即逝</b>，必须每天盯目标院校官网。</p></div>
+
+<div class="term"><h3>优营（优秀营员）<span class="tag t-warn">不再等于 offer</span></h3>
+<p>夏令营/交流营中表现优秀获评的称号，历史上约等于提前锁定。</p>
+<p class="key"><b>现状：院校为防被"放鸽子"普遍超发优营</b>，且明确"按总成绩从高到低录取"。排在后面的人，前面的人不放弃你就进不去。<b>这种浮动性质的优营，算不上真正有效的保底。</b></p></div>
+
+<div class="term"><h3>铁 offer / 有效力</h3>
+<p>明确承诺录取、且能落到国家推免系统的 offer。</p>
+<p class="key"><b>关键：</b>判断标准只有一条——<b>能不能在国家系统里给你发"待录取通知"</b>。口头承诺、邮件承诺、导师私下的许诺，一律不作数。</p></div>
+
+<div class="term"><h3>候补 / waitlist</h3>
+<p>排在正式录取名单之后，前面有人放弃则顺位替补。</p>
+<p class="key"><b>关键：</b>候补能否转正是<b>概率事件</b>，取决于该专业的热度。不能把候补当保底来规划。</p></div>
+
+<div class="term"><h3>海投 / 海王</h3>
+<p>广撒网投递申请 / 手握多个 offer 迟迟不放。</p>
+<p class="key"><b>关键：</b>这是"超发优营"现象的成因——<b>学校超额发 offer 对冲被鸽的风险，风险转嫁给了学生</b>。</p></div>
+</section>
+
+<section id="c">
+<h2>三、系统操作类 —— 最后一步的硬规则</h2>
+<div class="note">这一环最容易在"最后一公里"翻车。所有录取必须走国家系统，不走系统的一律无效。</div>
+
+<div class="term"><h3>推免服务系统<span class="tag t-ok">唯一官方通道</span></h3>
+<p>全称"全国推荐优秀应届本科毕业生免试攻读研究生信息公开暨管理服务系统"（研招网）。</p>
+<p class="key"><b>关键：</b>所有推免录取<b>必须</b>在这个系统里完成志愿填报和待录取确认。<b>系统外的一切承诺都没有效力</b>。</p></div>
+
+<div class="term"><h3>平行志愿</h3>
+<p>一次可填报 3 个志愿，院校之间平行。</p>
+<p class="key"><b>关键：</b>三个志愿要拉开梯度（冲刺 / 匹配 / 保底），<b>不要三个都填同一档次的学校</b>。</p></div>
+
+<div class="term"><h3>锁定期 / 48 小时不可修改<span class="tag t-warn">高频翻车点</span></h3>
+<p>志愿提交后 48 小时内不可修改（2026 届规则）。</p>
+<p class="key"><b>关键：</b>只要有一个志愿<b>被招生单位点开查看</b>，就开始计时，你想换也换不了。<b>提交前必须想清楚</b>，别想着"先填了再说"。</p></div>
+
+<div class="term"><h3>复试通知</h3>
+<p>招生单位在系统里发给你的复试邀请。</p>
+<p class="key"><b>关键：</b><b>超时未回复 = 自动放弃</b>。部分单位还会限制"几小时内必须回复"。系统不会主动弹窗推送，<b>必须自己每天刷</b>。</p></div>
+
+<div class="term"><h3>待录取通知</h3>
+<p>复试通过后，招生单位在系统里发给你的正式录取通知。</p>
+<p class="key"><b>关键：</b>必须在规定时间内点"<b>接受</b>"，<b>不点视为放弃</b>。一旦接受即锁定，不能再改、不能再去别的学校。</p></div>
+
+<div class="term"><h3>服从调剂<span class="tag t-tip">慎点</span></h3>
+<p>在志愿招生单位<b>内部</b>进行专业调剂（不能跨招生单位）。</p>
+<p class="key"><b>关键：</b>点了之后，原本报学硕<b>可能被调到专硕，研究方向也可能变</b>。不想被调配就别点。</p></div>
+
+<div class="term"><h3>拟录取 / 正式录取</h3>
+<p>系统确认后公示为"拟录取"，次年经政审、体检、档案审查后转为正式录取。</p>
+<p class="key"><b>关键：</b>拟录取后<b>仍要毕得了业、拿得到学位、过得了政审体检</b>，别在大四放飞自我。</p></div>
+</section>
+
+<section id="d">
+<h2>四、评价与加分类 —— 加分项怎么算</h2>
+<div class="note"><b>趋势：竞争维度正从"卷绩点"转向"卷实践"。单纯成绩好，边际收益在下降。</b></div>
+
+<div class="term"><h3>综合测评（综测）</h3>
+<p>德智体美劳的综合评分，包含学业、思想、体育、社会实践等。</p>
+<p class="key"><b>关键：</b>要明确<b>推免用的是"学业排名"还是"综测排名"</b>——这决定了你该把时间投在哪。</p></div>
+
+<div class="term"><h3>加分细则</h3>
+<p>学院文件中列出的竞赛、论文、专利、荣誉的具体加分表。</p>
+<p class="key"><b>关键：</b>这是<b>全校最重要的一份文件</b>，直接决定 ROI。有的学校国家级竞赛加 5 分，有的只加 0.5 分——<b>差 10 倍，投入策略完全不同</b>。</p></div>
+
+<div class="term"><h3>白名单竞赛</h3>
+<p>中国高等教育学会发布的"全国普通高校大学生竞赛榜单"内竞赛。</p>
+<p class="key"><b>关键：</b><b>大部分学校只认榜单内的竞赛</b>。打了半天不在榜，等于白打。查加分细则时先对照榜单。</p></div>
+
+<div class="term"><h3>大创</h3>
+<p>大学生创新创业训练计划，分国家级 / 省级 / 校级立项。</p>
+<p class="key"><b>关键：</b>性价比高——<b>投入可控、立项即加分、还能转化成论文或竞赛作品</b>，是智能建造这类工科专业最稳的科研起点。</p></div>
+
+<div class="term"><h3>论文署名：一作 / 通讯作者</h3>
+<p>第一作者是主要完成人，通讯作者通常是导师。</p>
+<p class="key"><b>关键：</b><b>学生一作才有分量</b>；"导师一作、学生二作"在多数学校加分大幅缩水。给老师打工前先问清署名。</p></div>
+
+<div class="term"><h3>期刊分级：SCI / EI / 北大核心 / 普刊</h3>
+<p>学术期刊的等级划分，按影响力递减。</p>
+<p class="key"><b>关键：</b><b>警惕"水刊"和掠夺性期刊（predatory journal）</b>——花几千块版面费发的普刊，在部分学校加分表里<b>根本不计分</b>，甚至被面试官扣分。</p></div>
+
+<div class="term"><h3>学硕 / 专硕 / 直博</h3>
+<p>学术学位硕士 / 专业学位硕士 / 直接攻读博士。</p>
+<p class="key"><b>趋势：</b>近年<b>学硕缩招、专硕扩招、直博占比提升</b>。别默认专硕更容易——热门专业专硕的推免竞争同样激烈。</p></div>
+
+<div class="term"><h3>CET-4 / CET-6</h3>
+<p>大学英语四、六级。</p>
+<p class="key"><b>关键：</b>四级是<b>硬门槛</b>（多数学校要求 425+）；六级是<b>隐形筛选线</b>，头部院校夏令营常卡 500+ 甚至 550+。<b>这是大一最该优先解决的事</b>，越往后越没时间。</p></div>
+</section>
+
+<section id="e">
+<h2>五、出身与博弈类 —— 圈子黑话</h2>
+<div class="note">这些词官方文件里没有，但真实影响你的录取概率。</div>
+
+<div class="term"><h3>985 / 211 / 双一流 / 双非</h3>
+<p>本科院校层次划分。"双非"指非 985、非 211（现多指非"双一流"）。</p>
+<p class="key"><b>关键：</b>部分院校初筛会<b>卡本科出身</b>。这是客观存在的信息，不是抱怨——用它来<b>校准你的投递梯度</b>。</p></div>
+
+<div class="term"><h3>本科出身歧视 / 第一学历</h3>
+<p>部分招生单位在材料初筛时对本科院校层级设隐性门槛。</p>
+<p class="key"><b>关键：</b>应对方式是<b>用科研和竞赛成果对冲</b>——出身改不了，但成果能把你的材料从"初筛淘汰"拉回"进入考核"。</p></div>
+
+<div class="term"><h3>报录比</h3>
+<p>报名人数 ÷ 录取人数。</p>
+<p class="key"><b>关键：</b>比"院校名气"更能反映真实难度。<b>一所 985 的冷门方向，可能比一所 211 的热门方向好进得多。</b></p></div>
+
+<div class="term"><h3>保底校 / 冲刺校 / 匹配校</h3>
+<p>按录取概率把目标院校分三档。</p>
+<p class="key"><b>关键：</b>夏令营失效、优营超发之后，<b>往年的"保底校"今年可能已经不保底了</b>。判断保底必须结合当年招生名额、报录比、生源背景、导师留人政策综合看。</p></div>
+
+<div class="term"><h3>联系导师 / 套磁</h3>
+<p>提前给目标导师发邮件，争取进入其课题组。</p>
+<p class="key"><b>关键：</b>在<b>政策摇摆、官网信息滞后</b>的年份，直接问导师"今年是否有推免名额"的边际效用最高。<b>问法要具体，别问"我能不能上"。</b></p></div>
+</section>
+
+<section id="f">
+<h2>六、专业与学科类 —— 智能建造相关</h2>
+
+<div class="term"><h3>跨保（跨专业保研）</h3>
+<p>本科专业与研究生专业不一致的保研。</p>
+<p class="key"><b>关键：</b>对方会<b>看你成绩单上有没有相关先修课</b>。智能建造想跨到计算机、自动化，必须有数据结构、算法、机器学习等课程成绩。<b>这时选课不是为了 GPA，是为了报名资格。</b></p></div>
+
+<div class="term"><h3>一级学科 / 二级学科</h3>
+<p>学科目录层级。如"土木工程"是一级学科（代码 0814），其下"结构工程""防灾减灾"等是二级学科。</p>
+<p class="key"><b>关键：</b>推免报名通常报到<b>一级学科或专业学位类别</b>，具体方向进校后再定。</p></div>
+
+<div class="term"><h3>专业学位类别代码</h3>
+<p>如"土木水利"专硕代码 0859、"土木工程"学硕代码 0814。</p>
+<p class="key"><b>关键：</b>填志愿和查简章时<b>用代码比用名字准</b>——不同学校同一个名字可能挂在不同代码下，考试科目和名额完全不同。</p></div>
+
+<div class="term"><h3>学科评估</h3>
+<p>教育部对一级学科的水平评级，从 A+ 到 C-。</p>
+<p class="key"><b>关键：</b><b>选学校时"学科评估等级"往往比"学校名气"更值得看</b>——一所综合排名一般的学校，某个方向可能是 A 类，资源丰富、导师强、出路好。</p></div>
+
+<div class="term"><h3>导师 / 课题组 / 名额</h3>
+<p>研究生阶段的实际负责人和科研团队。</p>
+<p class="key"><b>关键：</b><b>推免名额最终落到具体导师头上</b>。确认录取后要尽快联系导师——好导师的名额是"先到先得"的，晚了一步可能只剩你不想要的方向。</p></div>
+</section>
+
+<section id="g">
+<h2>七、易混淆辨析 —— 最容易踩的 8 个坑</h2>
+
+<div class="box b-warn"><h3>1. 推免资格 ≠ 被录取</h3>
+<p>本校给你资格，只是你有资格<b>报名</b>；对方学校录不录是另一回事。每年都有人拿了资格，9 月系统关闭时仍是零 offer。</p></div>
+
+<div class="box b-warn"><h3>2. 优营 ≠ offer</h3>
+<p>2025 年后院校普遍超发优营，且明确"按总成绩从高到低录取"。<b>只有能落到国家系统、发得出"待录取通知"的才叫 offer。</b></p></div>
+
+<div class="box b-warn"><h3>3. 夏令营 ≠ 夏令营（旧含义）</h3>
+<p>现在叫"交流营 / 开放日 / 暑期学校"的，多半<b>不发 offer</b>；真正的选拔已经并进预推免，时间还大幅前置。<b>用三年前的经验贴规划，必然踩空。</b></p></div>
+
+<div class="box b-warn"><h3>4. 加权平均分 ≠ 算术平均分</h3>
+<p>5 学分的高数考 80，影响远大于 2 学分的选修考 95。<b>所有选课策略都必须按学分加权来算，不能凭"这门课我学得好"来判断。</b></p></div>
+
+<div class="box b-warn"><h3>5. GPA 排名 ≠ 综测排名</h3>
+<p>有的学校推免只用学业排名，有的用综合排名，有的两者都要达标。<b>这决定了你该不该花时间搞竞赛和学生工作。</b></p></div>
+
+<div class="box b-warn"><h3>6. 待录取 ≠ 录取</h3>
+<p>学校发了待录取通知，<b>你点了"接受"才生效</b>；不点 = 放弃。点了之后 = 锁定，不能改。</p></div>
+
+<div class="box b-warn"><h3>7. 重修 ≠ 覆盖</h3>
+<p>有的按最高分、有的按首修、有的按最后一次、有的标注"重修"字样。<b>政策不同，"该不该刷分"的结论完全相反</b>——这是最值得花 10 分钟查清楚的一条。</p></div>
+
+<div class="box b-warn"><h3>8. 专硕 ≠ 更好上</h3>
+<p>学硕缩招、专硕扩招是趋势，但<b>热门专业的专硕推免竞争同样激烈</b>。别把专硕当退路来规划。</p></div>
+</section>
+
+<section id="h">
+<h2>八、时间线（2026 届现行口径）</h2>
+<div class="note"><b>你是 2026 级入学，属于 2030 届，具体日期届时会调整</b>，但整体结构稳定，可以据此倒推安排。</div>
+<table>
+<tr><th>时间</th><th>环节</th><th>你要做什么 / 风险点</th></tr>
+<tr><td>大一 – 大二上</td><td>打基础</td><td>稳住高学分核心课（高数、力学、专业基础）；<b>大一把四级过了</b></td></tr>
+<tr><td>大二下 – 大三上</td><td>攒筹码</td><td>六级刷分、进实验室/大创、打白名单竞赛、联系导师</td></tr>
+<tr><td>大三下 3–6 月</td><td>准备材料</td><td>成绩单、排名证明、个人陈述、推荐信、简历；盯各校通知</td></tr>
+<tr><td>大三暑假 7–8 月</td><td>预推免考核</td><td><b>现在的主战场，且逐年提前</b>；部分学校 7 月初就开放系统</td></tr>
+<tr><td>大四上 9 月上旬</td><td>本校资格评定</td><td>学院核算排名、公示名单；<b>边缘人此时才知道有没有递补</b></td></tr>
+<tr><td>9 月 21 日 9:00</td><td>推免系统开放</td><td>填 3 个平行志愿，<b>48 小时内不可修改</b></td></tr>
+<tr><td>9 月下旬 – 10 月</td><td>复试 → 待录取</td><td><b>每天刷系统</b>；接到通知按时回复并接受</td></tr>
+<tr><td>10 月 20 日前后</td><td>待录取确认截止</td><td>不点接受 = 自动放弃</td></tr>
+<tr><td>10 月下旬</td><td>补录（十推）</td><td>未招满专业开放，招满即止</td></tr>
+</table>
+</section>
+
+<footer>
+本文件整理自教育部《全国硕士研究生招生工作管理规定》及 2026 年各高校推免公开信息。<br>
+<b>具体数字、日期、加分细则一律以你本校教务处当年发布的推免文件为准。</b>政策逐年调整，本文件的作用是帮你看懂文件的结构，而不是替代文件。
+</footer>
+
+</div>
+<script>
+var q=document.getElementById('q');
+q.addEventListener('input',function(){
+  var v=this.value.trim().toLowerCase();
+  var terms=document.querySelectorAll('.term');
+  terms.forEach(function(t){
+    t.style.display = (!v || t.textContent.toLowerCase().indexOf(v)>-1) ? '' : 'none';
+  });
+  document.querySelectorAll('section').forEach(function(s){
+    var vis=s.querySelectorAll('.term');
+    var any=false;
+    vis.forEach(function(t){ if(t.style.display!=='none') any=true; });
+    var hasTerms=s.querySelectorAll('.term').length>0;
+    s.style.display = (hasTerms && !any) ? 'none' : '';
+  });
+});
+</script>
+</body>
+</html>
